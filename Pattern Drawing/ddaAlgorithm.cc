@@ -1,53 +1,53 @@
-#include<iostream>
-#include<graphics.h>
+// #include<iostream>
+// #include<graphics.h>
 
-using namespace std;
+// using namespace std;
 
-void drawDDALine(){
+// void drawDDALine(int dx, int dy, int x1, int y1){
+//     int steps;
+//     if(abs(dx) > abs(dy)){
+//         steps = abs(dx);
+//     }
+//     else{
+//         steps = abs(dy);
+//     }    
 
-}
+//     float Xinc = (float) dx / steps,
+//           Yinc = (float) dy / steps;
 
-int main(){
-    int x1, y1,
-        x2, y2;
+//     int gd = DETECT, gm;
+//     initgraph(&gd, &gm, NULL);
 
-    cout << "DDA Line Drawing Algorithm" << endl;
+//     for(int i = 0; i < steps; i++){
+//         x1 += Xinc;
+//         y1 += Yinc;
+//         putpixel(round(x1), round(y1), WHITE);
+//     }      
 
-    cout << "Enter the first co-ordinate: " ;
-    cin >> x1;
-    cin >> y1;
+//     getch();
 
-    cout << "Enter the second co-ordinate: ";
-    cin >> x2;
-    cin >> y2;
+//     closegraph();
+// }
 
-    int dx = x2 - x1,
-        dy = y2 - y1,
-        steps;
+// int main(){
+//     int x1, y1,
+//         x2, y2;
 
-    if(abs(dx) > abs(dy)){
-        steps = abs(dx);
-    }
-    else{
-        steps = abs(dy);
-    }    
+//     cout << "DDA Line Drawing Algorithm" << endl;
 
-    float Xinc = (float) dx / steps,
-          Yinc = (float) dy / steps;
+//     cout << "Enter the first co-ordinate: " ;
+//     cin >> x1;
+//     cin >> y1;
 
-    int gd = DETECT, gm;
-    initgraph(&gd, &gm, NULL);
+//     cout << "Enter the second co-ordinate: ";
+//     cin >> x2;
+//     cin >> y2;
 
-    for(int i = 0; i < steps; i++){
-        x1 += Xinc;
-        y1 += Yinc;
-        putpixel(round(x1), round(y1), WHITE);
-    }      
+//     int dx = x2 - x1,
+//         dy = y2 - y1;
 
-    getch();
+//     drawDDALine(dx, dy, x1, y1);
 
-    closegraph();
+//     return 0;
 
-    return 0;
-
-}
+// }
